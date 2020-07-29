@@ -75,7 +75,6 @@ public class Fecha {
     */
 
     public int comparar(Fecha otra) {
-     //M: ¿Es mejor un switch?
      int f= Integer.parseInt(this.fecha);
      int o= Integer.parseInt(otra.fecha);
      if(f<o){return -1;}

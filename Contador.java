@@ -24,8 +24,7 @@ public class Contador {
      *
      *(opcional: se podria pasar un parametro "cantidad" para incrementar esa cantidad de unidades).
      */
-    public void incrementar() {
-     //M: ¿Agregamos el parḿetro de uidades o dejamos que incremente uno? 
+    public void incrementar() { 
      this.cuenta++;
     }
 

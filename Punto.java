@@ -79,7 +79,6 @@ public class Punto {
      */
   
     public double distanciaEuclidiana(Punto otro) {
-        //M: revisar (¿Hay que sacarle radioPolar a este resultado o soy yo delirando de sueño?)
         return Math.sqrt(Math.pow((otro.x-this.x),2)+Math.pow((otro.y-this.y),2));
     }
 }
