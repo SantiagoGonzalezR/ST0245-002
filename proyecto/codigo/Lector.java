@@ -1,6 +1,6 @@
 
 /**
- * @author (Santiago Gonzalez, Mariana Vargas)
+ * @author (Santiago Gonzalez, Mariana Vasquez)
  * Lector de archivos
  */
 import java.io.*;
