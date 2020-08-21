@@ -33,8 +33,6 @@ public static int[] generador(int n){
       long ti = System.currentTimeMillis();
       int start= generador(i).length-1;
       long tf = System.currentTimeMillis();
-      System.out.println(ti);
-      System.out.println(tf);
       System.out.println("Tiempo transcurrido:"+ (tf - ti));
 }
  
