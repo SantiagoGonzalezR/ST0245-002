@@ -3,8 +3,9 @@
  *
  * @author Mauricio Toro, Andres Paez
  * @version 1
+ * 
+ * NOTA: La complejidad de cada ejercicio está especificada en los comentarios
  */
-
 public class Taller5 {  
 
     /**
@@ -14,10 +15,14 @@ public class Taller5 {
      * @return la suma de todos los numeros sumados.
      */
     public static int suma (int[]array){
-        int acum = 0;
-        for (int i = 0; i < array.length; i++)
-            acum = acum + array[i];
-        return acum;
+        int acum = 0; // T2(n)=c1
+        for (int i = 0; i < array.length; i++) // T3(n)=c2+c3*n
+            acum = acum + array[i]; // T4(n)=c4*n
+        return acum; // T5(n)=c5
+        /* T(n)= c1 + c2+c3*n + c4*n + c5
+         * Suma --> O(c4*n)
+         * Producto --> T(n) es O(n)
+         */
     }
 
     /**
@@ -28,8 +33,13 @@ public class Taller5 {
      * 
      */
     public static void mul (int num){
-        for(int i=1;i<=10;i++)
-            System.out.println(num+" x "+i+" = "+(num*i));
+        for(int i=1;i<=10;i++) // T2(n)=c1(n+1)+c2
+            System.out.println(num+" x "+i+" = "+(num*i)); //T3(n)=c3(n+1)
+            /*
+             * T(n)= c1(n+1)+c2+c3(n+1)
+             * Suma --> O(c3(n+1))
+             *  Producto --> T(n) es O(n+1)
+             */
     }
 
     /**
@@ -41,15 +51,19 @@ public class Taller5 {
      * 
      */
     public static int[] insertionSort (int[] array){
-        for(int i=0; i<array.length; i++){
-            for(int j=i; j>0; j--){
-                if (array[j]<array[j-1]){
-                    int temp=array[j];
-                    array[j]=array[j-1];
-                    array[j-1]=temp;
+        for(int i=0; i<array.length; i++){ // T2(n)= c1+c2*n
+            for(int j=i; j>0; j--){ // T3(n)= c3+c4*n
+                if (array[j]<array[j-1]){ //T4(n)=c5*n*n
+                    int temp=array[j]; // T4(n)=c6*n*n
+                    array[j]=array[j-1]; //T5(n)=c7*n*n
+                    array[j-1]=temp; //T6(n)=c8*n*n
                 }
             }
         }
-        return array;
+        return array; //T7(n)=c9
+        /* T(n)= c1+c2*n + c3+c4*n+ c5*n*n+ c5*n*n+ c6*n*n+ c7*n*n+ c8*n*n
+         * Suma --> O(c8*n*n)
+         * Producto --> T(n) es O(n^2)
+         */
     }    
 }
