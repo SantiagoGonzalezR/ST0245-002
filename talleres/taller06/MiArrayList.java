@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Para más información de la clase ArrayList:
  * @see <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html"> Ver documentacion ArrayList </a>
  * 
- * @ref Codigo creado por Mauricio Toro, Andres Paes
+ * @ref Codigo creado por Mauricio Toro, Andres Paez
  * @author Santiago Gonzalez, Mariana Vásquez
  * @version 1
  */
