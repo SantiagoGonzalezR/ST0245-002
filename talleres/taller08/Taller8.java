@@ -45,7 +45,17 @@ public class Taller8 {
      * @param solicitudes es una estructura de datos para representar las solicitudes.
      */
     public static void asignarSolicitudes  (Stack<Integer> neveras, Stack<String> solicitudes){
-        
+        (Stack<Node> neveras, Queue<Node> solicitudes){
+        while(!solicitudes.isEmpty()){
+            Node tienda = solicitudes.poll();
+            System.out.println(tienda.nombre +": ");
+            for(int i=0; i<tienda.numero; i++){
+                Node nevera = neveras.pop();
+                System.out.println("    "+nevera.nombre +"_"+nevera.numero);
+            }
+            System.out.println();
+        }
+      }
     }
 
     /**
