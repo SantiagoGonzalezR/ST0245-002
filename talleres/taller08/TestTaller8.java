@@ -41,11 +41,25 @@ public class TestTaller8 {
     }
     
     
-    public static void ejercicio2(){
-    	Queue<String> cola1;
-    	String[] a = {"Juan","Maria","Pedro","Mariana"};
-    	cola1=toQueue(a);
-    	Taller8.cola(cola1);
+    public static void ejercicio2 (){
+        Stack<Node> neveras = new Stack<Node>();
+        for(int i=1; i<=10; i++){
+            neveras.push(new Node(i+4681,"Nevera"));
+        }
+        for(int i=1; i<=10; i++){
+            neveras.push(new Node(i+4682,"Artico Portatil"));
+        }
+        for(int i=1; i<=10; i++){
+            neveras.push(new Node(i*4683,"lavadora"));
+        }
+
+        Queue<Node> tienda = new LinkedList<Node>();
+        tienda.add(new Node(10,"Neveras la 33"));
+        tienda.add(new Node(20,"Neveras y Neveras"));
+        tienda.add(new Node(30,"Todo en Neveras"));
+
+        Taller8.asignarSolicitudes(nev,tien);
+    
     }
     
     public static Queue<String> toQueue(String[]array){
