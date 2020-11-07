@@ -14,3 +14,4 @@ public abstract class Graph
        return size;
     }
 }
+// Doy por sentado que no subi esto para la fecha correcta.
