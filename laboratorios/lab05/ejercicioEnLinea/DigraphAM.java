@@ -7,7 +7,7 @@ public class DigraphAM extends Graph {
     //Grafo con matriz
     private int[][] mat;
 
-    public DigraphAMonline(int size){
+    public DigraphAM(int size){
         super(size);
         mat = new int[size+1][size+1];
 
