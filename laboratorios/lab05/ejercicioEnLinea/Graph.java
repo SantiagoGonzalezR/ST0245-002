@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 //CODIGO BASE DADO POR EL PROFESOR
-public abstract class Graphonline
+public abstract class Graph
 {
     private int size;
 
-    public Graphonline(int vertices)
+    public Graph(int vertices)
     {
         size = vertices;
     }
