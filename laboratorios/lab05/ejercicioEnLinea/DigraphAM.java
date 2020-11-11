@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class DigraphAM extends Graphonline {
+public class DigraphAM extends Graph {
 
     //Grafo con matriz
     private int[][] mat;
