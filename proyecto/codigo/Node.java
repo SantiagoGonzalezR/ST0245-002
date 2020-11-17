@@ -38,6 +38,7 @@ public class Node{
     /**
      * Constructor of the class Node
      * @param m Matrix that possesses all the data
+     * Reference for Pair href:https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html
      */
     public Node(String [][] m){
         value=bestVariable(m);
@@ -83,8 +84,9 @@ public class Node{
     }
 
     /**
-     * Uses Treeset to prune repeated data.
+     * Uses TreeSet to prune repeated data.
      * @param m The matrix that contains the data, posVariable Position of the variable that is to be pruned
+     * Reference for TreeSet href:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html
      */
     public TreeSet<String> pruneRepeatedData(String[][] m, int posVariable){
         TreeSet<String> total = new TreeSet();
@@ -97,6 +99,8 @@ public class Node{
     /**
      * Finds the best posible data for declaring the success of a student
      * @param m The matrix that contains the data
+     * Reference for TreeSet href:https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html
+     * Reference for Pair href:https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html
      */
     public  Pair<Integer,String> bestVariable(String[][] m){
         float lowestImpurity = 1;
@@ -176,6 +180,7 @@ public class Node{
      * Divides tha matrix into 2 for the trees.
      * @param m The matrix that possesses the data, varPos The position of the variable to be moved to either matrix
      * value The value of the data to be interchanged
+     * Reference for Pair href:https://docs.oracle.com/javase/8/javafx/api/javafx/util/Pair.html
      */
     public  Pair<String[][],String[][]> divideMatrix(String[][] m, int varPos, String value){
         int varEqVal = 0;
