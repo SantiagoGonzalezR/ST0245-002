@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * The reader and main class of the program.
  * The actual file reader was taken form StackOverflow at https://stackoverflow.com/questions/35791418/java-read-csv-file-as-matrix
- * @authors Santiago Gonzalez Rodriguez, Mariana Vasquez Escobar, Andres Echeverri, Esteban Echeverri
+ * @authors Santiago Gonzalez Rodriguez, Mariana Vasquez Escobar, Andres Echeverri, Sebastián Jácome Burbano,Esteban Echeverri
  */
 public class Reader {
     Node root;
