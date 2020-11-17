@@ -3,7 +3,7 @@ import javafx.util.*;
 /**
  * This class creates both the nodes and the trees for the forest.
  * It also does most of the calculations that are required for the proyect.
- * @authors: Santiago Gonzalez Rodriguez, Mariana Vasquez Escobar, Andres Echeverri, Esteban Echeverri, Mauricio Toro
+ * @authors: Santiago Gonzalez Rodriguez, Mariana Vasquez Escobar, Andres Echeverri, Sebastián Jácome Burbano,Esteban Echeverri, Mauricio Toro
  */
 public class Node{
     Pair <Integer, String> value;
