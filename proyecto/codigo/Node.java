@@ -159,7 +159,7 @@ public class Node{
                 varEqualsVal++;
         int varDifVal = m.length - varEqualsVal;
         String[][] matrixVarEqVal = new String[varEqualsVal][m[0].length];
-        String[][] matrixVarNonEqVal= new String[varEqualsVal][m[0].length];
+        String[][] matrixVarNonEqVal= new String[varDifVal][m[0].length];
         int row = 0;
         int rowN1 = 0;
         int rowN2=0;
